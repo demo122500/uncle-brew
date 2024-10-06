@@ -33,7 +33,7 @@ const CartContent = ({ userId }: CartContentProps) => {
     if (searchParams.get("canceled")) {
       toast.error("Something went wrong try again later!");
     }
-  }, [searchParams, cart.removeAll, cart]);
+  }, [searchParams]);
 
   const onCheckOut = async () => {
     const response = await axios.post(
