@@ -7,8 +7,13 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+interface CartActionButtonProps {
+  scrolled:  boolean;
 
-const CartActionButton = ({scrolled}) => {
+}
+
+const CartActionButton = ({scrolled}:  CartActionButtonProps) => {
+
   const [mounted, setMounted] = useState(false);
 
   const cart = useCart()
