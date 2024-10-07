@@ -65,6 +65,7 @@ const CartContent = ({ userId }: CartContentProps) => {
               <p className="text-3xl text-neutral-600 font-semibold">
                 No items added to cart
               </p>
+              <Button className="rounded-full h-9">Start Shopping</Button>
             </div>
           )}
 
