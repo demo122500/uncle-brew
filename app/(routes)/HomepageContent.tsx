@@ -112,7 +112,7 @@ const HomepageContent = ({ products, newProducts }: HomepageContentProps) => {
                 src={assets.food}
                 alt="Hero"
                 className="object-cover w-full h-full absolute mb-8 animate-slide-in"
-                //style={{ filter: 'drop-shadow(0 -6mm 4mm rgb(255, 255, 255))'}}
+                style={{ filter: 'drop-shadow(30px 10px 50px gray)'}}
               />
             </div>
           </div>
