@@ -61,7 +61,7 @@ const CartContent = ({ userId }: CartContentProps) => {
       <div className="w-full lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-8 mt-4">
         <div className="col-span-8">
           {cart.items.length === 0 && (
-            <div className="w-full items-center flex flex-col justify-center">
+            <div className="w-full items-center flex flex-col justify-center gap-4">
               <p className="text-3xl text-neutral-600 font-semibold">
                 No items added to cart
               </p>
