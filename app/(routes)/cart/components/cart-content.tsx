@@ -10,6 +10,7 @@ import CartItem from "./cart-item";
 import Box from "@/components/box";
 import { Separator } from "@/components/ui/separator";
 import axios from "axios";
+import Link from "next/link"
 
 interface CartContentProps {
   userId: string | null;
@@ -65,7 +66,9 @@ const CartContent = ({ userId }: CartContentProps) => {
               <p className="text-3xl text-neutral-600 font-semibold">
                 No items added to cart
               </p>
-              <Button className="rounded-full h-9">Start Shopping</Button>
+              <Link href="/menu">
+                <Button className="rounded-full h-9">Start Shopping</Button>
+              </Link>
             </div>
           )}
 
